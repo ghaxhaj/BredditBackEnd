@@ -21,7 +21,7 @@ import lombok.*;
 public class Comment {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long blogId;
 	@NotEmpty
 	private String text;
 	@ManyToOne(fetch = FetchType.LAZY)
